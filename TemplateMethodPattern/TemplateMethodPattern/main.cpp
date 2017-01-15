@@ -7,7 +7,7 @@
 int main()
 {
 	int language = 0;
-	printf("言語を選んでください。0:日本後、1:英語\n");
+	printf("言語を選んでください。0:日本語、1:英語\n");
 	scanf_s("%d", &language);
 	if (language == 0 || language == 1) {
 		//個人情報入力フォームを実行する。
