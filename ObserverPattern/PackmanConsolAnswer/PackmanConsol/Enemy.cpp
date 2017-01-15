@@ -6,12 +6,14 @@
 Enemy::Enemy()
 {
 	//課題ヒント　プレイヤーにリスナーを登録する。
+	g_player.AddStateListener(this);
 }
 
 
 Enemy::~Enemy()
 {
 	//課題ヒント　プレイヤーからリスナーを削除する。
+	g_player.RemoveStateListener(this);
 }
 
 /*!
