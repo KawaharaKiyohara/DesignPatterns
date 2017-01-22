@@ -1,0 +1,5 @@
+①まずPlayerクラスとPlayer2クラスの基底クラスとなるPlayerBaseクラスを作成する。
+②PlayerクラスとPlayer2クラスの共通処理をPlayerBaseクラスに移動する。
+③下記のようなPlayerBaseのポインタの配列型を作成して、ポリモーフィズムを活用するようにコードを変更する。
+   PlayerBase* playerList[2];
+④Enemyのコンストラクタとデストラクタで行っているリスナーの登録と削除を上記の配列を使うように変更する。
