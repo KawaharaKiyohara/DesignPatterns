@@ -44,9 +44,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Game.cs" />
+    <Compile Include="IModel.cs" />
     <Compile Include="ModelDX.cs" />
     <Compile Include="ModelGL.cs" />
-    <Compile Include="ModelPS4.cs" />
+    <Compile Include="snModelPS4.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

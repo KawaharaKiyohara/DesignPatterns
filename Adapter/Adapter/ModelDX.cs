@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace Adapter
 {
-    class ModelDX
+    class ModelDX : IModel
     {
-        public void Draw()
+        public void PreDraw()
         {
             Console.WriteLine("DirectX Draw!!!");
         }
-        public void BeginDraw()
+        public void Draw()
         {
             Console.WriteLine("DirectX PreDraw!!!");
         }
-        public void EndDraw()
+        public void PostDraw()
         {
             Console.WriteLine("DirectX PostDraw!!!");
         }

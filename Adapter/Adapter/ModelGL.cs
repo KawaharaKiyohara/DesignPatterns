@@ -9,9 +9,9 @@ namespace Adapter
     /// <summary>
     /// OpenGLのモデル表示クラス。
     /// </summary>
-    class ModelGL
+    class ModelGL : IModel
     {
-        public void DrawGL()
+        public void Draw()
         {
             Console.WriteLine("OpenGL Draw!!!");
         }

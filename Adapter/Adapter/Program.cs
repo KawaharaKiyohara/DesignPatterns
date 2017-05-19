@@ -22,14 +22,15 @@ namespace Adapter
                     game.model = new ModelDX();
                     break;
                 }
-                //そのほかのプラットフォームはどうしよう・・・
                 if (pl == 1)
                 {
-                    
+                    game.model = new ModelGL();
+                    break;
                 }
                 if (pl == 2)
                 {
-
+                    //ModelPS4はベンダーが提供しているクラスなため変更できない。
+                    //gameクラスも変更できない、どうすればいい？
                 }
                 
             }

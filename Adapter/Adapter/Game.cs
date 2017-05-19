@@ -9,16 +9,16 @@ namespace Adapter
 {
     class Game
     {
-        public ModelDX model { get;  set; }
+        public IModel model { get;  set; }
         public void Run()
         {
             while (true)
             {
-                model.BeginDraw();
+                model.PreDraw();
                 Thread.Sleep(100);      //100ミリ秒眠る
                 model.Draw();
                 Thread.Sleep(100);      //100ミリ秒眠る
-                model.EndDraw();
+                model.PostDraw();
             }
         }
     }
