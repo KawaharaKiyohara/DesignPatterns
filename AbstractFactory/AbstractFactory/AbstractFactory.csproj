@@ -43,7 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CompFactoryDX.cs" />
+    <Compile Include="CompFactoryPS4.cs" />
     <Compile Include="Game.cs" />
+    <Compile Include="ICompFactory.cs" />
     <Compile Include="Model\IModel.cs" />
     <Compile Include="Model\ModelDX.cs" />
     <Compile Include="Model\ModelPS4.cs" />
