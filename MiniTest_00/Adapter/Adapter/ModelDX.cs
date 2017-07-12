@@ -6,17 +6,21 @@ using System.Threading.Tasks;
 
 namespace Adapter
 {
-    class ModelPS4
+    class ModelDX : IModel
     {
-        public void DrawPS4()
+        public void Load(string modelName)
         {
-            Console.WriteLine("DrawPS4!!!");
+            Console.WriteLine("DirectX Load");
         }
-        public void PreDrawPS4()
+        public void PreDraw()
+        {
+            Console.WriteLine("DirectX Draw!!!");
+        }
+        public void Draw()
         {
             Console.WriteLine("DirectX PreDraw!!!");
         }
-        public void PostDrawPS4()
+        public void PostDraw()
         {
             Console.WriteLine("DirectX PostDraw!!!");
         }

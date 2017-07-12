@@ -11,17 +11,21 @@ namespace Adapter
     /// </summary>
     class ModelGL : IModel
     {
+        public void Load(string modelName)
+        {
+            Console.WriteLine("OpenGL Load");
+        }
         public void Draw()
         {
             Console.WriteLine("OpenGL Draw!!!");
         }
         public void PreDraw()
         {
-            Console.WriteLine("DirectX PreDraw!!!");
+            Console.WriteLine("OpenGL PreDraw!!!");
         }
         public void PostDraw()
         {
-            Console.WriteLine("DirectX PostDraw!!!");
+            Console.WriteLine("OpenGL PostDraw!!!");
         }
     }
 }
