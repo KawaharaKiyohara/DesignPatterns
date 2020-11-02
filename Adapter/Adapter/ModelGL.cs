@@ -9,7 +9,7 @@ namespace Adapter
     /// <summary>
     /// OpenGLのモデル表示クラス。
     /// </summary>
-    class ModelGL : IModel
+    class ModelGL  : IModel
     {
         public void Draw()
         {
